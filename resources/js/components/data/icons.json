@@ -34,5 +34,21 @@
   {
     "name": "gestión",
     "value": "mdi-account-cog"
+  },
+  {
+    "name": "contador",
+    "value": "mdi-clipboard-list"
+  },
+  {
+    "name": "consultas-por-usuario",
+    "value": "mdi-clipboard-account-outline"
+  },
+  {
+    "name": "consultas-por-fecha",
+    "value": "mdi-timeline-clock-outline"
+  },
+  {
+    "name": "tokens",
+    "value": "mdi-script-text-key-outline"
   }
 ]
