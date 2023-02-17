@@ -102,10 +102,10 @@ class consultaNombresController extends generarTokenController
 //            $fechaNacimientoNuevoFormato = $dia . "/" . $mes . "/" . $anio;
 
 
-//            $consultaNombres = $this->realizarConsultaNombres($primerNombre, $segundoNombre, $primerApellido, $segundoApellido, $fechaNacimiento, $tokenActivo);
+            $consultaNombres = $this->realizarConsultaNombres($primerNombre, $segundoNombre, $primerApellido, $segundoApellido, $fechaNacimiento, $tokenActivo);
 
-            $consultaNombres = '{"result":true,"fecha":"08\/02\/2023","responseCode":200,"hora":"08:46:46","mensaje":"Se muestran los resultados encontrados.","data":[{"CUI":"1969891081506","PRIMER_NOMBRE":"Valeria","SEGUNDO_NOMBRE":null,"TERCER_NOMBRE":null,"PRIMER_APELLIDO":"Morales","SEGUNDO_APELLIDO":null,"FECHA_NACIMIENTO":"15\/12\/1922","GENERO":"F","ESTADO_CIVIL":"S","NACIONALIDAD":"GUATEMALA","FECHA_DEFUNCION":null,"OCUPACION":"OFICIOS DOMESTICOS","VECINDAD":"BAJA VERAPAZ, EL CHOL"}]}';
-            $consultaNombres = json_decode($consultaNombres);
+//            $consultaNombres = '{"result":true,"fecha":"08\/02\/2023","responseCode":200,"hora":"08:46:46","mensaje":"Se muestran los resultados encontrados.","data":[{"CUI":"1969891081506","PRIMER_NOMBRE":"Valeria","SEGUNDO_NOMBRE":null,"TERCER_NOMBRE":null,"PRIMER_APELLIDO":"Morales","SEGUNDO_APELLIDO":null,"FECHA_NACIMIENTO":"15\/12\/1922","GENERO":"F","ESTADO_CIVIL":"S","NACIONALIDAD":"GUATEMALA","FECHA_DEFUNCION":null,"OCUPACION":"OFICIOS DOMESTICOS","VECINDAD":"BAJA VERAPAZ, EL CHOL"}]}';
+//            $consultaNombres = json_decode($consultaNombres);
             $contadorAnterior = contador::latest('id_contador')->first();// Obtengo el ultimo registro que se haya ingresado para cambiar el estado del anterior
             $idContador = $contadorAnterior->id_contador;
             $fechaUltimoContador = $contadorAnterior->fecha_contador;

@@ -11,7 +11,7 @@
           <v-row>
             <v-col
                 cols="12"
-                sm="6"
+                sm="5"
             >
               <v-menu
                   v-model="menu2"
@@ -42,7 +42,7 @@
             </v-col>
             <v-col
                 cols="12"
-                sm="6"
+                sm="5"
             >
               <v-menu
                   v-model="menu3"
@@ -71,7 +71,19 @@
                 ></v-date-picker>
               </v-menu>
             </v-col>
-            <v-spacer></v-spacer>
+            <v-col
+                cols="12"
+                sm="2"
+            >
+              <v-icon
+                  color="red"
+                  class="ma-2 pa-2"
+                  x-large
+                  @click="generarReporte"
+              >
+                mdi-file-pdf-box-outline
+              </v-icon>
+            </v-col>
           </v-row>
         </v-container>
 
@@ -108,18 +120,18 @@
         </v-card-actions>
       </v-form>
 
-      <v-container>
-        <div class="d-flex flex-row-reverse mb-6 bg-surface-variant">
-          <v-icon
-              color="red"
-              class="ma-2 pa-2"
-              x-large
-              @click="generarReporte"
-          >
-            mdi-file-pdf-box-outline
-          </v-icon>
-        </div>
-      </v-container>
+      <!--      <v-container>-->
+      <!--        <div class="d-flex flex-row-reverse mb-6 bg-surface-variant">-->
+      <!--          <v-icon-->
+      <!--              color="red"-->
+      <!--              class="ma-2 pa-2"-->
+      <!--              x-large-->
+      <!--              @click="generarReporte"-->
+      <!--          >-->
+      <!--            mdi-file-pdf-box-outline-->
+      <!--          </v-icon>-->
+      <!--        </div>-->
+      <!--      </v-container>-->
 
       <div v-if="existeInformacion">
 

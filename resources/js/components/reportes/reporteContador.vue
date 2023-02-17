@@ -11,7 +11,7 @@
           <v-row>
             <v-col
                 cols="12"
-                sm="6"
+                sm="5"
             >
               <v-menu
                   v-model="menu2"
@@ -42,7 +42,7 @@
             </v-col>
             <v-col
                 cols="12"
-                sm="6"
+                sm="5"
             >
               <v-menu
                   v-model="menu3"
@@ -70,6 +70,19 @@
                     :min="date"
                 ></v-date-picker>
               </v-menu>
+            </v-col>
+            <v-col
+                cols="12"
+                sm="2"
+            >
+              <v-icon
+                  color="red"
+                  class="ma-2 pa-2"
+                  x-large
+                  @click="generarReporte"
+              >
+                mdi-file-pdf-box-outline
+              </v-icon>
             </v-col>
             <v-spacer></v-spacer>
           </v-row>
@@ -115,20 +128,20 @@
           tile
           elevation="0"
       >
-        <v-card
-            class="pa-2"
-            tile
-            elevation="0"
-        >
-          <v-icon
-              color="red"
-              class="ma-2 pa-2"
-              x-large
-              @click="generarReporte"
-          >
-            mdi-file-pdf-box-outline
-          </v-icon>
-        </v-card>
+        <!--        <v-card-->
+        <!--            class="pa-2"-->
+        <!--            tile-->
+        <!--            elevation="0"-->
+        <!--        >-->
+        <!--          <v-icon-->
+        <!--              color="red"-->
+        <!--              class="ma-2 pa-2"-->
+        <!--              x-large-->
+        <!--              @click="generarReporte"-->
+        <!--          >-->
+        <!--            mdi-file-pdf-box-outline-->
+        <!--          </v-icon>-->
+        <!--        </v-card>-->
 
         <v-card
             class="pa-2"

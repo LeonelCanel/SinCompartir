@@ -83,12 +83,12 @@ class consultaController extends generarTokenController
             $idTokenActivo = $obtenerToken->id_token;
 
             //Se realiza la consulta y se envia como parametro el cui escrito por el usuario y el token activo actualmente.
-//            $consultaCui = $this->realizarConsulta($cui, $tokenActivo);
+            $consultaCui = $this->realizarConsulta($cui, $tokenActivo);
 //        Guardar en las distintas tablas previo a realizar la consulta
 //        Tabla contador
 
-            $consultaCui = '{"result":true,"fecha":"08\/02\/2023","responseCode":200,"hora":"08:46:46","mensaje":"Se muestran los resultados encontrados.","data":[{"CUI":"1969891081506","PRIMER_NOMBRE":"Valeria","SEGUNDO_NOMBRE":null,"TERCER_NOMBRE":null,"PRIMER_APELLIDO":"Morales","SEGUNDO_APELLIDO":null,"FECHA_NACIMIENTO":"15\/12\/1922","GENERO":"F","ESTADO_CIVIL":"S","NACIONALIDAD":"GUATEMALA","FECHA_DEFUNCION":null,"OCUPACION":"OFICIOS DOMESTICOS","VECINDAD":"BAJA VERAPAZ, EL CHOL"}]}';
-            $consultaCui = json_decode($consultaCui);
+//            $consultaCui = '{"result":true,"fecha":"08\/02\/2023","responseCode":200,"hora":"08:46:46","mensaje":"Se muestran los resultados encontrados.","data":[{"CUI":"1969891081506","PRIMER_NOMBRE":"Valeria","SEGUNDO_NOMBRE":null,"TERCER_NOMBRE":null,"PRIMER_APELLIDO":"Morales","SEGUNDO_APELLIDO":null,"FECHA_NACIMIENTO":"15\/12\/1922","GENERO":"F","ESTADO_CIVIL":"S","NACIONALIDAD":"GUATEMALA","FECHA_DEFUNCION":null,"OCUPACION":"OFICIOS DOMESTICOS","VECINDAD":"BAJA VERAPAZ, EL CHOL"}]}';
+//            $consultaCui = json_decode($consultaCui);
             $contadorAnterior = contador::latest('id_contador')->first();// Obtengo el ultimo registro que se haya ingresado para cambiar el estado del anterior
             $idContador = $contadorAnterior->id_contador;
             $fechaUltimoContador = $contadorAnterior->fecha_contador;
