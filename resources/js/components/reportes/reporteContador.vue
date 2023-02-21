@@ -5,7 +5,7 @@
         class="mx-auto my-12"
         max-width="1500"
     >
-      <h2 class="tituloReporte">Reporte contador de consultas realizadas por rango de fecha</h2>
+      <h2 class="tituloReporte">Reporte contador de consultas realizadas por rango de fecha este es un cambio para verificar </h2>
       <v-form ref="consultaRangoFecha" v-model="buscarRangoFecha" v-on:submit.prevent="buscarRangoFecha">
         <v-container>
           <v-row>
