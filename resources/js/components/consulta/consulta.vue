@@ -32,7 +32,7 @@ export default {
         })*/
     },
     genToken() {
-        console.log("Hola Mundo")
+        console.log("Hola Mundo para pruebas")
        /* this.token = []
         this.loading = true;
         axios.get('tokens/gToken')
